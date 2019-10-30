@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">practical23</string>
+    <string name="box_one">Box One</string>
+    <string name="box_two">Box Two</string>
+    <string name="box_three">Box Three</string>
+    <string name="box_four">Box Four</string>
+    <string name="box_five">Box Five</string>
+    <string name="redButton">Red</string>
+    <string name="blueButton">Blue</string>
+    <string name="greenButton">Green</string>
+</resources>
