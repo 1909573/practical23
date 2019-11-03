@@ -1,6 +1,7 @@
 package com.example.practical23
 
 import android.graphics.Color
+import android.graphics.drawable.Drawable
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.view.View
@@ -13,18 +14,29 @@ class MainActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
         setListeners()
+
+
     }
 
     private fun makeColored(view: View) {
         when (view.id) {
 
             // Boxes using Color class colors for the background
+            /*
             R.id.box1 -> view.setBackgroundColor(Color.DKGRAY)
             R.id.box2 -> view.setBackgroundColor(Color.GRAY)
             R.id.box3 -> view.setBackgroundColor(Color.BLUE)
             R.id.box4 -> view.setBackgroundColor(Color.MAGENTA)
             R.id.box5 -> view.setBackgroundColor(Color.BLUE)
             else -> view.setBackgroundColor(Color.BLACK)
+            */
+
+            R.id.box1 -> view.setBackgroundResource(R.drawable.one)
+            R.id.box2 -> view.setBackgroundResource(R.drawable.two)
+            R.id.box3 -> view.setBackgroundResource(R.drawable.three)
+            R.id.box4 -> view.setBackgroundResource(R.drawable.four)
+            R.id.box5 -> view.setBackgroundResource(R.drawable.five)
+            else -> view.setBackgroundResource(R.drawable.back)
         }
     }
 
@@ -38,6 +50,9 @@ class MainActivity : AppCompatActivity() {
         val boxThreeText = findViewById<TextView>(R.id.box3)
         val boxFourText = findViewById<TextView>(R.id.box4)
         val boxFiveText = findViewById<TextView>(R.id.box5)
+
+
+
 
         val rootConstraintLayout = findViewById<View>(R.id.constraintLayout)
 
